@@ -45,7 +45,7 @@ Leaderboard: [emosuperb.github.io](https://emosuperb.github.io/) · Paper: [IEEE
 Emotion perception is genuinely ambiguous, yet majority/plurality voting throws away minority annotator views. This work formalizes an all-inclusive aggregation rule for building and evaluating multi-label SER systems across IEMOCAP, MSP-IMPROV, MSP-PODCAST, and BIIC-PODCAST.
 Paper: [IEEE SLT 2024](https://doi.org/10.1109/SLT61566.2024.10832302)
 
-**[Stimulus Modality Matters](https://github.com/EMOsuperb/Stimulus-Modality-Matters)** — Does the annotator's modality change your model?
+**[Stimulus Modality Matters](https://github.com/ag027592/Stimulus-Modality-Matters)** — Does the annotator's modality change your model?
 Labels collected from audio-only, video-only, and audio-visual stimuli are not interchangeable. We quantify how the perceptual modality used during annotation propagates into SER system performance.
 Paper: [ICASSP 2025](https://doi.org/10.1109/ICASSP49660.2025.10890558) · [arXiv](https://arxiv.org/abs/2409.10762)
 
@@ -53,7 +53,13 @@ Paper: [ICASSP 2025](https://doi.org/10.1109/ICASSP49660.2025.10890558) · [arXi
 You can prompt a TTS system to "sound excited," but does a listener actually hear excitement? We quantify the gap between the instruction given to instruction-guided expressive TTS systems and what human listeners perceive.
 Paper: *ICASSP 2026* · [Live project page](https://huangchengchou.com/Do-You-Hear-What-I-Mean/) · [Source](https://github.com/ag027592/Do-You-Hear-What-I-Mean)
 
-**[EDL-LRL](https://github.com/ag027592/EDL-LRL)** — Facial emotion distribution learning by exploiting low-rank label correlations locally
+**[TaigiSpeech](https://github.com/ag027592/TaigiSpeech)** — Real-world Taiwanese Hokkien speech intent dataset for eldercare
+Voice assistants fail the people who could benefit most from them. TaigiSpeech collects spontaneous Taiwanese Hokkien commands from elderly speakers in realistic home scenarios, using an offline recording app built so that data never leaves the participant's machine before consent.
+Paper: *INTERSPEECH 2026* (long paper) · [Project page](https://kwchang.org/taigispeech)
+
+**[Emotional TTS Labeling Instructions](https://github.com/ag027592/emotionalTTS-labeling-instruction)** — Calibration material for perceptual listening tests
+Subjective listening tests are only as good as the raters' shared understanding of the scale. These pages give annotators anchored audio examples at every scale point for emotion category, intensity, word emphasis, and perceived age before they rate real data.
+[Live site](https://ag027592.github.io/emotionalTTS-labeling-instruction/)
 
 ## Selected Publications
 
