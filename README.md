@@ -37,7 +37,7 @@ I have shipped speech and ML systems from research through deployment as an Appl
 
 ## Featured Work
 
-**[EMO-SUPERB](https://github.com/EMOsuperb/EMO-SUPERB-submission)** — Reproducible speech emotion recognition benchmark
+**[EMO-SUPERB](https://github.com/ag027592/EMO-SUPERB)** — Reproducible speech emotion recognition benchmark
 Only 19% of SER papers release reproducible results. EMO-SUPERB evaluates **15 speech self-supervised models across 6 open datasets** with standardized partitions that remove data leakage, plus an online leaderboard. We also use ChatGPT to recover the 2.58% of annotations written as free-form natural language that classification models normally discard, yielding a 3.08% average relative gain.
 Leaderboard: [emosuperb.github.io](https://emosuperb.github.io/) · Paper: [IEEE SLT 2024](https://ieeexplore.ieee.org/abstract/document/10832296) · [arXiv](https://arxiv.org/pdf/2402.13018)
 
