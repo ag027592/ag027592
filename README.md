@@ -49,6 +49,10 @@ Paper: [IEEE SLT 2024](https://doi.org/10.1109/SLT61566.2024.10832302)
 Labels collected from audio-only, video-only, and audio-visual stimuli are not interchangeable. We quantify how the perceptual modality used during annotation propagates into SER system performance.
 Paper: [ICASSP 2025](https://doi.org/10.1109/ICASSP49660.2025.10890558) · [arXiv](https://arxiv.org/abs/2409.10762)
 
+**[Do You Hear What I Mean?](https://huangchengchou.com/Do-You-Hear-What-I-Mean/)** — Quantifying the instruction-perception gap in expressive TTS
+You can prompt a TTS system to "sound excited," but does a listener actually hear excitement? We quantify the gap between the instruction given to instruction-guided expressive TTS systems and what human listeners perceive.
+Paper: *ICASSP 2026* · [Live project page](https://huangchengchou.com/Do-You-Hear-What-I-Mean/) · [Source](https://github.com/ag027592/Do-You-Hear-What-I-Mean)
+
 **[EDL-LRL](https://github.com/ag027592/EDL-LRL)** — Facial emotion distribution learning by exploiting low-rank label correlations locally
 
 ## Selected Publications
