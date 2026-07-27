@@ -16,84 +16,49 @@
 
 ## About
 
-I build speech systems that hear **how** something is said, not just **what** is said.
+I build speech systems that model **how** something is said—not only **what** is said. My work focuses on:
 
-I am a Postdoctoral Scholar and NSTC Fellow at the Signal Analysis and Interpretation Laboratory (SAIL), University of Southern California, working with Prof. Shrikanth S. Narayanan. I earned my Ph.D. in Electrical Engineering from National Tsing Hua University under Prof. Chi-Chun Lee, where my dissertation on speech emotion recognition under subjectivity received the **ACLCLP Doctoral Dissertation Award (Honorable Mention)**.
+- **Reliable speech evaluation** — reproducible benchmarks, calibration, fairness, and leakage-resistant protocols
+- **Human-centered speech AI** — annotator disagreement, multi-label emotion, perceptual studies, and HITL tooling
+- **Speech systems in the real world** — speech LLMs, voice assistants, low-resource speech, and clinical applications
 
-I have shipped speech and ML systems from research through deployment as an Applied Scientist Intern at **Amazon Alexa Speech**, and in applied DSP roles at **RealTek** and **ITRI**.
+I am a Postdoctoral Scholar and NSTC Fellow at **USC SAIL**, working with Prof. Shrikanth S. Narayanan. I earned my Ph.D. from **National Tsing Hua University**; my dissertation on subjective speech emotion recognition received an **ACLCLP Doctoral Dissertation Award (Honorable Mention)**.
 
-**Open to speech AI / applied scientist / research engineer roles.**
+Previously: Applied Scientist Intern at **Amazon Alexa Speech**, applied ML / DSP at **RealTek**, and speech / DSP engineering at **ITRI**.
 
-## Research Themes
-
-| Theme | What I work on |
-|---|---|
-| **Subjective &amp; ambiguous SER** | Multi-label learning, annotator disagreement, soft labels, calibration — systems that respect emotion ambiguity instead of collapsing it into one "ground truth" |
-| **Open evaluation &amp; benchmarks** | Reproducible evaluation contracts: splits, metrics, prompts, parsing, diagnostics (EMO-SUPERB, VoxEmo, EMO-Reasoning) |
-| **Fairness &amp; robustness** | Subgroup disparity, debiasing without fragile demographic shortcuts, confidence-oriented augmentation |
-| **Assistant speech systems** | Unified ASR + multi-label SER, on-device SER/KWS under compute budgets, emotional-speech ASR analysis |
-| **Speech LLMs &amp; low-resource speech** | Large audio language models, expressive TTS evaluation, codec emotion preservation, Taiwanese Hokkien speech resources |
-| **Conversational social signals** | Deception in dialogue, group belongingness, dyadic clinical affect |
-| **HITL clinical annotation** | Multi-rater coding UIs, training gates, attention checks, agreement metrics for health interview speech |
+> **Open to Speech AI, Applied Scientist, Research Scientist, and Research Engineer roles.**  
+> Los Angeles, CA · [Email](mailto:ag027592@gmail.com) · [CV](https://huangchengchou.com/assets/Huang-Cheng_Chou_CV.pdf)
 
 ## Featured Work
 
 **[EMO-SUPERB](https://github.com/ag027592/EMO-SUPERB)** — Reproducible speech emotion recognition benchmark
-Only 19% of SER papers release reproducible results. EMO-SUPERB evaluates **15 speech self-supervised models across 6 open datasets** with standardized partitions that remove data leakage, plus an online leaderboard. We also use ChatGPT to recover the 2.58% of annotations written as free-form natural language that classification models normally discard, yielding a 3.08% average relative gain.
-Leaderboard: [emosuperb.github.io](https://emosuperb.github.io/) · Paper: [IEEE SLT 2024](https://ieeexplore.ieee.org/abstract/document/10832296) · [arXiv](https://arxiv.org/pdf/2402.13018)
-
-**[Embracing Multi-Label SER](https://github.com/ag027592/Embracing-Multi-Label)** — All-inclusive aggregation rule
-Emotion perception is genuinely ambiguous, yet majority/plurality voting throws away minority annotator views. This work formalizes an all-inclusive aggregation rule for building and evaluating multi-label SER systems across IEMOCAP, MSP-IMPROV, MSP-PODCAST, and BIIC-PODCAST.
-Paper: [IEEE SLT 2024](https://doi.org/10.1109/SLT61566.2024.10832302)
-
-**[Stimulus Modality Matters](https://github.com/ag027592/Stimulus-Modality-Matters)** — Does the annotator's modality change your model?
-Labels collected from audio-only, video-only, and audio-visual stimuli are not interchangeable. We quantify how the perceptual modality used during annotation propagates into SER system performance.
-Paper: [ICASSP 2025](https://doi.org/10.1109/ICASSP49660.2025.10890558) · [arXiv](https://arxiv.org/abs/2409.10762)
-
-**[Do You Hear What I Mean?](https://huangchengchou.com/Do-You-Hear-What-I-Mean/)** — Quantifying the instruction-perception gap in expressive TTS
-You can prompt a TTS system to "sound excited," but does a listener actually hear excitement? We quantify the gap between the instruction given to five instruction-guided TTS systems and what human listeners perceive, releasing the **E-VOC corpus** of large-scale human ratings.
-Paper: [IEEE ICASSP 2026](https://doi.org/10.1109/ICASSP55912.2026.11462935) · [arXiv](https://arxiv.org/abs/2509.13989) · [E-VOC dataset](https://huggingface.co/datasets/wizzzzzzzzz/E-VOC) · [Project page](https://huangchengchou.com/Do-You-Hear-What-I-Mean/)
-
-**[rtMRI Speech Enhancement](https://github.com/ag027592/rtmri-speech-enhancement)** — Does cleaner audio help science?
-Modern enhancers raise quality scores on scanner-noisy real-time MRI speech — and can still distort speaker, phonetic, and time-varying cues. Interactive demo comparing DENOISER, PASE, REUSE, and RT-REUSE with synchronized video and acoustic probes.
-Manuscript in preparation for *JASA* · [Live demo](https://huangchengchou.com/rtmri-speech-enhancement/)
-
-**[TaigiSpeech](https://github.com/ag027592/TaigiSpeech)** — Real-world Taiwanese Hokkien speech intent dataset for eldercare
-Voice assistants fail the people who could benefit most from them. TaigiSpeech collects spontaneous Taiwanese Hokkien commands from elderly speakers in realistic home scenarios, using an offline recording app built so that data never leaves the participant's machine before consent.
-Paper: *INTERSPEECH 2026* (long paper) · [Project page](https://kwchang.org/taigispeech)
-
-**[Emotional TTS Labeling Instructions](https://github.com/ag027592/emotionalTTS-labeling-instruction)** — Calibration material for perceptual listening tests
-Subjective listening tests are only as good as the raters' shared understanding of the scale. These pages give annotators anchored audio examples at every scale point for emotion category, intensity, word emphasis, and perceived age before they rate real data.
-[Live site](https://huangchengchou.com/emotionalTTS-labeling-instruction/)
+Standardized, leakage-resistant evaluation of **15 speech SSL models across 6 open datasets**, with recoverable splits, metrics, and an online leaderboard.  
+[Code](https://github.com/ag027592/EMO-SUPERB) · [Leaderboard](https://emosuperb.github.io/) · [IEEE SLT 2024](https://ieeexplore.ieee.org/document/10832296) · 51+ GitHub stars
 
 **[CGM Contingency Scoring](https://github.com/ag027592/cgm-contingency-scoring)** — HITL platform for clinical interview coding
-Scores how people describe learning from continuous glucose monitoring feedback: contingency structure (context → behavior → consequence → rule), bilingual EN/ES cards, a Test Drive gate, hidden attention checks, and Cohen/QWK agreement dashboards. Public release is software + synthetic demo data only (IRB-safe).
-Repo: [ag027592/cgm-contingency-scoring](https://github.com/ag027592/cgm-contingency-scoring)
+Bilingual EN/ES annotation UI with a training gate, hidden attention checks, evidence spans, and Cohen/QWK agreement dashboards. The public release contains synthetic demo data only.  
+[Code + demo instructions](https://github.com/ag027592/cgm-contingency-scoring) · Python · Streamlit · CI
 
-## Selected Publications
+**[rtMRI Speech Enhancement](https://github.com/ag027592/rtmri-speech-enhancement)** — Does cleaner audio preserve the signals science needs?
+Interactive evaluation of DENOISER, PASE, REUSE, and RT-REUSE on scanner-noisy real-time MRI speech, including synchronized video and acoustic probes.  
+[Live demo](https://huangchengchou.com/rtmri-speech-enhancement/) · *JASA* manuscript in preparation
 
-First-author unless noted. Full list on [Google Scholar](https://scholar.google.com/citations?user=_d7pcs4AAAAJ&hl=en).
+**[Do You Hear What I Mean?](https://huangchengchou.com/Do-You-Hear-What-I-Mean/)** — Instruction–perception gap in expressive TTS
+Human evaluation of five instruction-guided TTS systems and the **E-VOC** corpus of large-scale perceptual ratings.  
+[Project page](https://huangchengchou.com/Do-You-Hear-What-I-Mean/) · [ICASSP 2026](https://doi.org/10.1109/ICASSP55912.2026.11462935) · [Dataset](https://huggingface.co/datasets/wizzzzzzzzz/E-VOC)
 
-- **Minority Views Matter: Evaluating Speech Emotion Classifiers with Human Subjective Annotations by an All-Inclusive Aggregation Rule** — *IEEE Transactions on Affective Computing*, 2024
-- **Open-Emotion: A Reproducible EMO-SUPERB for Speech Emotion Recognition Systems** — *IEEE SLT 2024*
-- **Embracing Ambiguity and Subjectivity Using the All-Inclusive Aggregation Rule for Evaluating Multi-Label SER Systems** — *IEEE SLT 2024*
-- **Stimulus Modality Matters: Impact of Perceptual Evaluations from Different Modalities on SER System Performance** — *ICASSP 2025*
-- **A Tiny Whisper-SER: Unifying Automatic Speech Recognition and Multi-Label Speech Emotion Recognition Tasks** — *APSIPA ASC 2024*
-- **The Importance of Calibration: Rethinking Confidence and Performance of Speech Multi-Label Emotion Classifiers** — *INTERSPEECH 2023*
-- **Every Rating Matters: Joint Learning of Subjective Labels and Individual Annotators for Speech Emotion Classification** — *ICASSP 2019*
-- **DeSTA2.5-Audio: Toward General-Purpose Large Audio Language Model with Self-Generated Cross-Modal Alignment** — *IEEE TASLP 2026* (co-author)
-- **TaigiSpeech: A Low-Resource Real-World Speech Intent Dataset** — *INTERSPEECH 2026* long paper (co-author)
-- **Do You Hear What I Mean? Quantifying the Instruction-Perception Gap in Instruction-Guided Expressive TTS** — *ICASSP 2026* (co-author)
+**[TaigiSpeech](https://github.com/ag027592/TaigiSpeech)** — Privacy-conscious data collection for low-resource speech
+Offline recording app for collecting spontaneous Taiwanese Hokkien commands from older adults in realistic home scenarios; recordings stay local until consent.  
+[Code](https://github.com/ag027592/TaigiSpeech) · [Project page](https://kwchang.org/taigispeech) · *INTERSPEECH 2026*
 
-## Experience
+## Selected Research
 
-| Period | Role |
-|---|---|
-| 2025 – Present | Postdoctoral Scholar (NSTC Fellow), **USC SAIL** — Prof. Shrikanth Narayanan |
-| 2024 – 2025 | Independent Researcher, collaborating with **NTU SPML Lab** — Prof. Hung-yi Lee |
-| 2024 | Applied ML / DSP Intern, **RealTek** — Emerging Tech / Advanced DSP |
-| 2023 | Applied Scientist Intern, **Amazon AGI** — Alexa Speech / ASR |
-| 2016 – 2024 | Ph.D., Electrical Engineering, **NTHU BIIC Lab** — Prof. Chi-Chun Lee |
+- **Minority Views Matter** — all-inclusive evaluation under annotator disagreement, *IEEE Transactions on Affective Computing*, 2024
+- **Embracing Ambiguity and Subjectivity** — multi-label SER evaluation across four corpora, [IEEE SLT 2024](https://doi.org/10.1109/SLT61566.2024.10832302)
+- **Stimulus Modality Matters** — how audio / visual annotation conditions propagate into model performance, [ICASSP 2025](https://doi.org/10.1109/ICASSP49660.2025.10890558)
+- **A Tiny Whisper-SER** — unified ASR + multi-label speech emotion recognition, APSIPA ASC 2024
+
+Full publication list: [Google Scholar](https://scholar.google.com/citations?user=_d7pcs4AAAAJ&hl=en)
 
 ## Tech Stack
 
@@ -107,14 +72,10 @@ First-author unless noted. Full list on [Google Scholar](https://scholar.google.
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Slurm](https://img.shields.io/badge/Slurm-2C3E50?style=flat-square)
 
-Speech SSL models (WavLM, HuBERT, wav2vec 2.0, XLS-R, Whisper), speech LLMs, multi-label and multi-task learning, model compression for edge deployment, large-scale perceptual annotation pipelines, Streamlit HITL tooling for clinical / bilingual coding.
-
-## Selected Awards
-
-NSTC Postdoctoral Research Abroad Fellowship (2025–2026) · ACLCLP Doctoral Dissertation Award, Honorable Mention (2024) · APSIPA ASC Best Regular Paper Award (2019) · Merry Electronics Electroacoustics Thesis Award, Silver (2025) &amp; Bronze (2021) · NOVATEK Ph.D. Excellence Scholarship (2022–2023)
+Speech SSL (WavLM, HuBERT, wav2vec 2.0, XLS-R, Whisper) · speech LLMs · multi-label / multi-task learning · model compression · perceptual evaluation · Streamlit HITL systems
 
 ---
 
 <p align="center">
-  <i>Reach out if you are working on speech AI, voice assistants, or affective computing.</i>
+  <i>Building speech AI that is reproducible, human-centered, and useful outside the lab.</i>
 </p>
