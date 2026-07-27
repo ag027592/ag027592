@@ -37,7 +37,7 @@ Standardized, leakage-resistant evaluation of **15 speech SSL models across 6 op
 
 **[CGM Contingency Scoring](https://github.com/ag027592/cgm-contingency-scoring)** — HITL platform for clinical interview coding
 Bilingual EN/ES annotation UI with a training gate, hidden attention checks, evidence spans, and Cohen/QWK agreement dashboards. The public release contains synthetic demo data only.  
-[Code + demo instructions](https://github.com/ag027592/cgm-contingency-scoring) · Python · Streamlit · CI
+[Live demo](https://cgm-contingency-scoring.streamlit.app/) · [Code](https://github.com/ag027592/cgm-contingency-scoring) · Python · Streamlit · CI
 
 **[rtMRI Speech Enhancement](https://github.com/ag027592/rtmri-speech-enhancement)** — Does cleaner audio preserve the signals science needs?
 Interactive evaluation of DENOISER, PASE, REUSE, and RT-REUSE on scanner-noisy real-time MRI speech, including synchronized video and acoustic probes.  
