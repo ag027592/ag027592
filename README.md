@@ -50,8 +50,8 @@ Labels collected from audio-only, video-only, and audio-visual stimuli are not i
 Paper: [ICASSP 2025](https://doi.org/10.1109/ICASSP49660.2025.10890558) · [arXiv](https://arxiv.org/abs/2409.10762)
 
 **[Do You Hear What I Mean?](https://huangchengchou.com/Do-You-Hear-What-I-Mean/)** — Quantifying the instruction-perception gap in expressive TTS
-You can prompt a TTS system to "sound excited," but does a listener actually hear excitement? We quantify the gap between the instruction given to instruction-guided expressive TTS systems and what human listeners perceive.
-Paper: *ICASSP 2026* · [Live project page](https://huangchengchou.com/Do-You-Hear-What-I-Mean/) · [Source](https://github.com/ag027592/Do-You-Hear-What-I-Mean)
+You can prompt a TTS system to "sound excited," but does a listener actually hear excitement? We quantify the gap between the instruction given to five instruction-guided TTS systems and what human listeners perceive, releasing the **E-VOC corpus** of large-scale human ratings.
+Paper: [IEEE ICASSP 2026](https://doi.org/10.1109/ICASSP55912.2026.11462935) · [arXiv](https://arxiv.org/abs/2509.13989) · [E-VOC dataset](https://huggingface.co/datasets/wizzzzzzzzz/E-VOC) · [Project page](https://huangchengchou.com/Do-You-Hear-What-I-Mean/)
 
 **[TaigiSpeech](https://github.com/ag027592/TaigiSpeech)** — Real-world Taiwanese Hokkien speech intent dataset for eldercare
 Voice assistants fail the people who could benefit most from them. TaigiSpeech collects spontaneous Taiwanese Hokkien commands from elderly speakers in realistic home scenarios, using an offline recording app built so that data never leaves the participant's machine before consent.
