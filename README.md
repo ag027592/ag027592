@@ -59,7 +59,7 @@ Paper: *INTERSPEECH 2026* (long paper) · [Project page](https://kwchang.org/tai
 
 **[Emotional TTS Labeling Instructions](https://github.com/ag027592/emotionalTTS-labeling-instruction)** — Calibration material for perceptual listening tests
 Subjective listening tests are only as good as the raters' shared understanding of the scale. These pages give annotators anchored audio examples at every scale point for emotion category, intensity, word emphasis, and perceived age before they rate real data.
-[Live site](https://ag027592.github.io/emotionalTTS-labeling-instruction/)
+[Live site](https://huangchengchou.com/emotionalTTS-labeling-instruction/)
 
 ## Selected Publications
 
