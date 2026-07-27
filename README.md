@@ -53,6 +53,10 @@ Paper: [ICASSP 2025](https://doi.org/10.1109/ICASSP49660.2025.10890558) · [arXi
 You can prompt a TTS system to "sound excited," but does a listener actually hear excitement? We quantify the gap between the instruction given to five instruction-guided TTS systems and what human listeners perceive, releasing the **E-VOC corpus** of large-scale human ratings.
 Paper: [IEEE ICASSP 2026](https://doi.org/10.1109/ICASSP55912.2026.11462935) · [arXiv](https://arxiv.org/abs/2509.13989) · [E-VOC dataset](https://huggingface.co/datasets/wizzzzzzzzz/E-VOC) · [Project page](https://huangchengchou.com/Do-You-Hear-What-I-Mean/)
 
+**[rtMRI Speech Enhancement](https://github.com/ag027592/rtmri-speech-enhancement)** — Does cleaner audio help science?
+Modern enhancers raise quality scores on scanner-noisy real-time MRI speech — and can still distort speaker, phonetic, and time-varying cues. Interactive demo comparing DENOISER, PASE, REUSE, and RT-REUSE with synchronized video and acoustic probes.
+Manuscript in preparation for *JASA* · [Live demo](https://huangchengchou.com/rtmri-speech-enhancement/)
+
 **[TaigiSpeech](https://github.com/ag027592/TaigiSpeech)** — Real-world Taiwanese Hokkien speech intent dataset for eldercare
 Voice assistants fail the people who could benefit most from them. TaigiSpeech collects spontaneous Taiwanese Hokkien commands from elderly speakers in realistic home scenarios, using an offline recording app built so that data never leaves the participant's machine before consent.
 Paper: *INTERSPEECH 2026* (long paper) · [Project page](https://kwchang.org/taigispeech)
