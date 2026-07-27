@@ -34,6 +34,7 @@ I have shipped speech and ML systems from research through deployment as an Appl
 | **Assistant speech systems** | Unified ASR + multi-label SER, on-device SER/KWS under compute budgets, emotional-speech ASR analysis |
 | **Speech LLMs &amp; low-resource speech** | Large audio language models, expressive TTS evaluation, codec emotion preservation, Taiwanese Hokkien speech resources |
 | **Conversational social signals** | Deception in dialogue, group belongingness, dyadic clinical affect |
+| **HITL clinical annotation** | Multi-rater coding UIs, training gates, attention checks, agreement metrics for health interview speech |
 
 ## Featured Work
 
@@ -64,6 +65,10 @@ Paper: *INTERSPEECH 2026* (long paper) · [Project page](https://kwchang.org/tai
 **[Emotional TTS Labeling Instructions](https://github.com/ag027592/emotionalTTS-labeling-instruction)** — Calibration material for perceptual listening tests
 Subjective listening tests are only as good as the raters' shared understanding of the scale. These pages give annotators anchored audio examples at every scale point for emotion category, intensity, word emphasis, and perceived age before they rate real data.
 [Live site](https://huangchengchou.com/emotionalTTS-labeling-instruction/)
+
+**[CGM Contingency Scoring](https://github.com/ag027592/cgm-contingency-scoring)** — HITL platform for clinical interview coding
+Scores how people describe learning from continuous glucose monitoring feedback: contingency structure (context → behavior → consequence → rule), bilingual EN/ES cards, a Test Drive gate, hidden attention checks, and Cohen/QWK agreement dashboards. Public release is software + synthetic demo data only (IRB-safe).
+Repo: [ag027592/cgm-contingency-scoring](https://github.com/ag027592/cgm-contingency-scoring)
 
 ## Selected Publications
 
@@ -102,7 +107,7 @@ First-author unless noted. Full list on [Google Scholar](https://scholar.google.
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Slurm](https://img.shields.io/badge/Slurm-2C3E50?style=flat-square)
 
-Speech SSL models (WavLM, HuBERT, wav2vec 2.0, XLS-R, Whisper), speech LLMs, multi-label and multi-task learning, model compression for edge deployment, large-scale perceptual annotation pipelines.
+Speech SSL models (WavLM, HuBERT, wav2vec 2.0, XLS-R, Whisper), speech LLMs, multi-label and multi-task learning, model compression for edge deployment, large-scale perceptual annotation pipelines, Streamlit HITL tooling for clinical / bilingual coding.
 
 ## Selected Awards
 
